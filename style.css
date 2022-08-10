@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400;500;600&display=swap');
+
+@font-face
+{
+	font-family: "fontluar";
+	src:url('font/Silent Reaction.ttf');
+}
+@font-face
+{
+	font-family: "fontluar1";
+	src:url('font/Britney Hills.ttf');
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Inconsolata', monospace;
+	
+}
+body
+{
+	min-height: 200vh;
+	background: black;
+}
+.navbar 
+{
+	/*border-bottom: 1px solid lightblue;*/	
+}
+.navbar.sticki
+{
+	background: #fff;
+	transition: 1s;
+}
+.navbar.sticki .navbar-toggler i
+{
+	color: black;
+}
+.navbar-nav
+{
+	margin-left: auto;
+	margin-right: 30px;	
+}
+.navbar-toggler
+{
+	border: none;
+	margin-left: auto;
+}
+.navbar-toggler:hover
+{
+	color: lightblue;
+	transition: 0.5s;
+}
+.navbar-brand img
+{
+	margin-left: 20px;
+}
+.nav-item a
+{
+	color: #fff;
+	transition: 1s;	
+}
+.navbar.sticki .nav-item a
+{
+	color: black;
+}
+.nav-item a:hover
+{
+	color: lightblue;
+}
+.nav-item
+{
+	margin:auto;
+}
+.headerr img
+{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.contoh
+{
+	position: absolute;
+	width: 65%;
+	height: 300px;
+	background: #fff;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	margin-left: 17%;
+	margin-top: -150px;
+	border-radius: 10px;
+	z-index: 100;
+	
+}
+.contoh .konten img
+{
+	width: 250px;
+	margin-top: 25px;
+	margin-left: 10px;
+	display: flex;
+}
+.contoh .konten 
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contoh .konten p
+{
+	color: black;
+	margin-left: 25px;
+	margin-right: 10px;
+	border-bottom: 2px solid black; 
+}
+.contoh .konten p span
+{
+	font-weight: bold;
+	color: black;
+}
+.konten1 img
+{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size:cover;
+	margin-top: 200px;
+	filter: grayscale(70%);
+}
+.konten2 img
+{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size:cover;
+	/*margin-top: 200px;*/
+	font-weight: bold;
+	filter: grayscale(80%);
+}
+.konten3 img
+{
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	background-repeat: no-repeat;
+	background-size:cover;
+	margin-top: 40px;
+	filter: blur(4px);
+}
+.konten2 h3
+{
+	position: absolute;
+	margin-left: 25%;
+	font-size: 60px;
+	margin-top: -350px;
+}
+.konten1 h1
+{
+	position: absolute;
+	margin-top: -400px;
+	margin-left: 41%;
+	font-size: 5em;
+	font-family: 'fontluar';	
+
+}
+.tombol1 .tombol
+{
+	position: absolute;
+	margin-left: 45%;
+	margin-top: -250px;
+	width: 160px;
+	height: 40px;
+	color: black;
+	border-radius: 10px;
+	transition: 0.5s;
+	border: none;	
+
+}
+.tombol1 .tombol:hover
+{
+	background: blue;
+	color: #fff;
+}
+.modal-body p
+{
+	color: black;
+}
+.modal-header h5
+{
+	color: black;
+}
+.modal-body h1
+{
+	color: black;
+
+}
+.judul3 h1
+{
+	font-weight: bold;
+	margin-left: 43%;
+	margin-top: 30px;
+}
+.konten3 ul
+{
+	position: absolute;
+	margin-top: -500px;
+	font-size: 20px;
+	margin-left: 50px;
+}
+.konten3 ul li
+{
+	list-style: none;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.konten3 ul li:hover
+{
+	color: blue;
+}
+.konten3 ul .li3
+{
+	margin-bottom: 50px;
+}
+.konten3 ul h2
+{
+	font-family: 'fontluar1';
+	font-size: 70px;
+}
+.konten3 .sosmed
+{
+	right: 0;
+	margin-right: 150px;
+}
+.konten3 .sosmed li
+{
+	display: inline;
+	margin-left: 20px;
+	font-size: 30px;
+	transition: 0.5s;
+}
+.konten3 .sosmed li .fa
+{
+	transition: 0.5s;
+}
+.konten3 .sosmed li .fa:hover
+{
+	color: blue;
+}
+.konten3 .sosmed h2
+{
+	right: 0;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+	.headerr img
+	{
+		height: 600px !important; 
+		width: 100% !important;
+	}
+	.contoh .konten 
+	{
+		flex-direction: column;
+	}
+	.contoh
+	{
+		height: 540px;
+		margin-top: -190px;
+	}
+	.contoh .konten p
+	{
+		font-size: 15px;
+		margin-top: 30px;
+	}
+	.contoh .konten img
+	{
+		margin-top: 10px;
+		width: 200px;
+		margin-bottom: 10px;
+	}
+	.konten1 h1
+	{
+		position: absolute;
+		margin-top: -400px;
+		margin-left: 15%;
+		font-size: 5em;
+		font-family: 'fontluar';	
+
+	}
+	.tombol1 .tombol
+	{
+		margin-left: 30%;
+	}
+	.konten2 h3
+	{
+		font-size: 20px;
+		margin-left: 20%;
+	}
+	.konten3 ul h2
+	{
+		font-size: 40px;
+	}
+	.konten3 .sosmed
+	{
+		position: absolute;
+		left: 0;
+		margin-top: -45%; 
+	}
+	.judul3 h1
+	{
+		margin-left: 30%;
+	}
+}
+
+
+
+
+
+
+
